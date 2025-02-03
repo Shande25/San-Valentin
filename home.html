@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a San Valentín</title>
+    <style>
+        body {
+            background-image: url('https://us.123rf.com/450wm/tevarak11/tevarak111702/tevarak11170200884/71833876-luces-defocused-bokeh-fondo-de-corazones-rosas.jpg?ver=6');
+            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-position: center center; /* Centra la imagen */
+            background-repeat: no-repeat;
+            height: 100vh; /* Hace que el fondo cubra toda la altura de la pantalla */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #siBtn {
+            background-color: #28a745; /* Verde */
+            color: white;
+        }
+
+        #noBtn {
+            background-color: #dc3545; /* Rojo */
+            color: white;
+        }
+
+        /* Contenedor para los botones */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contenedores de los GIFs */
+        .gif-container img {
+            width: 100%;
+            height: auto;
+            max-width: 400px; /* Establece un tamaño máximo para los GIFs */
+            object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse */
+            border-radius: 10px; /* Opcional: para bordes redondeados */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gif-container" id="gifContainer">
+        <img id="gifContainerImg" src="https://media.tenor.com/f8q9othoSpgAAAAj/peach-cat.gif" alt="Ositos Iniciales">
+    </div>
+    <div class="gif-container" id="happyGifContainer" style="display: none;">
+        <img src="https://i.pinimg.com/originals/9b/dc/c6/9bdcc6206c1d36a37149d31108c6bb41.gif" alt="Ositos Felices">
+    </div>
+    <div class="gif-container" id="happyGifContainer2" style="display: none;">
+        <img src="https://i.pinimg.com/originals/9b/dc/c6/9bdcc6206c1d36a37149d31108c6bb41.gif" alt="Ositos Felices">
+    </div>
+    <div class="gif-container" id="happyGifContainer3" style="display: none;">
+        <img src="https://i.pinimg.com/originals/9b/dc/c6/9bdcc6206c1d36a37149d31108c6bb41.gif" alt="Ositos Felices">
+    </div>
+    <div class="gif-container" id="happyGifContainer4" style="display: none;">
+        <img src="https://i.pinimg.com/originals/9b/dc/c6/9bdcc6206c1d36a37149d31108c6bb41.gif" alt="Ositos Felices">
+    </div>
+    <div class="gif-container" id="sadGifContainer" style="display: none;">
+        <img src="https://i.pinimg.com/originals/f2/8d/2b/f28d2b5382516ada1de40f80cdabd79d.gif" alt="Osito Triste">
+    </div>
+    <div class="gif-container" id="sadGifContainer1" style="display: none;">
+        <img src="https://media.tenor.com/wYKKmqEdq-8AAAAi/tkthao219-peach.gif" alt="Osito Triste">
+    </div>
+    <div class="gif-container" id="sadGifContainer2" style="display: none;">
+        <img src="https://media.tenor.com/-9xLl1bsQ7cAAAAi/peach-cat-crying-peach-goma.gif" alt="Osito Triste">
+    </div>
+
+    <h1 id="question">¿Quieres ser mi San Valentín?</h1>
+    <div id="messageContainer" style="display: none;"></div>
+
+    <div class="button-container">
+        <button id="siBtn">Sí</button>
+        <button id="noBtn">No</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
